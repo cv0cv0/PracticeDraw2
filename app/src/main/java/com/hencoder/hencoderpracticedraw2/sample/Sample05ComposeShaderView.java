@@ -37,7 +37,7 @@ public class Sample05ComposeShaderView extends View {
         Shader shader1 = new BitmapShader(bitmap1, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.batman_logo);
         Shader shader2 = new BitmapShader(bitmap2, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
-        paint.setShader(new ComposeShader(shader1, shader2, PorterDuff.Mode.DST_IN));
+        paint.setShader(new ComposeShader(shader1, shader2, PorterDuff.Mode.DST_OUT));
     }
 
     @Override

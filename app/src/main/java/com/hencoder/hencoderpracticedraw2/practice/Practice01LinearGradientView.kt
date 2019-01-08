@@ -5,8 +5,8 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 
-class Practice01LinearGradientView(context: Context, attrs: AttributeSet) : View(context, attrs) {
-    private var paint = Paint(Paint.ANTI_ALIAS_FLAG)
+class Practice01LinearGradientView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
+    private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
     init {
         // 用 Paint.setShader(shader) 设置一个 LinearGradient
